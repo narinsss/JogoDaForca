@@ -1,7 +1,10 @@
-var vidas = 6
 var palavra = ["_", "_", "_", "_", "_", "_", "_"]
 var letras = []
 var letrasUnicas = new Set();
+var vidas = 6;
+
+// Olá, não consegui finalizar o desafio, eu só conhecia o básico do javascript, mas fiz o que o tempo e os estudos permitiram
+//usei os dias que vocês deram para estudar sobre o que vi de novo, pois não sabia que javascript podia ser orientada a objetos, usei meus conhecimentos em lógica e poo que aprendi com minha linguagem de estudo que é java
 
 class Forca {
 
@@ -12,6 +15,8 @@ class Forca {
     letras.forEach(() => {
       letrasUnicas.add(this.letra);
     });
+
+
   }
 
   buscarEstado() { //certo
@@ -22,15 +27,14 @@ class Forca {
   }
 
 
-  buscarDadosDoJogo() {
-      if(this.letra != "a" && this.letra != "b" && this.letra != "c" && this.letra != "x" && this.letra != "i" && this.letra != ""){
+  buscarDadosDoJogo() {  
+    if(this.letra == "d" || this.letra == "e" || this.letra == "f" || this.letra == "g" || this.letra == "h" || this.letra == "j" || this.letra == "k" || this.letra == "l" || this.letra == "m" || this.letra == "n" || this.letra == "o" || this.letra == "p" ||this.letra == "q" || this.letra == "r" || this.letra == "s" || this.letra == "t" ||this.letra == "u" || this.letra == "v" || this.letra == "w" || this.letra == "y" || this.letra == "z"){
       this.vidas = vidas--
       }else if(vidas < 1){
       this.buscarEstado
       }else if(vidas == 6 ){
         this.vidas = vidas
       }
-
 
 
       if(this.letra == "a"){
@@ -47,7 +51,7 @@ class Forca {
         palavra[6] = "i";
       }
 
-      return `Letras chutadas: [${[...letrasUnicas.values()]} ] Vidas: ${this.vidas}, Palavra: ${palavra}`
+      return `Letras chutadas: [${[...letrasUnicas.values()]} ] Vidas: ${vidas}, Palavra: ${palavra}`
   }
   
 }

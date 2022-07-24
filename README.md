@@ -18,12 +18,12 @@ pode criar outros métodos
 
 ##### *Regras de jogo:
 
-- Iniciar com 6 vidas;
-- Iniciar com estado "aguardando chute";
-- Todo chute deve conter apenas 1 letra, caso tenha mais não irá alterar nenhum estado;
+- Iniciar com 6 vidas; ✔
+- Iniciar com estado "aguardando chute"; ✔
+- Todo chute deve conter apenas 1 letra, caso tenha mais não irá alterar nenhum estado; ✔
 - Caso a letra chutada já tenha sido mencionada anteriormente, e errada, não irá alterar nenhum estado;
-- Registrar letras chutadas em "letrasChutadas";
-- Subtrair uma vida ao chutar uma letra errada;
-- Caso a letra esteja correta, mostrar em sua respectiva posição;
-- Vidas = 0, estado de jogo "perdeu";
-- Vidas > 0, e jogador acertou a última letra, estado de jogo "ganhou";
+- Registrar letras chutadas em "letrasChutadas"; ✔
+- Subtrair uma vida ao chutar uma letra errada; ✔
+- Caso a letra esteja correta, mostrar em sua respectiva posição; ✔
+- Vidas = 0, estado de jogo "perdeu"; ✔
+- Vidas > 0, e jogador acertou a última letra, estado de jogo "ganhou"; ✔
