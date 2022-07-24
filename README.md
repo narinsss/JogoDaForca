@@ -1,9 +1,5 @@
 ### Jogo Forca 
 
-cd startdb-2022
-
-npm start
-
 ##### Arquivo para implementar a lógica de funcionamento:
 
 forca.js
